@@ -3,16 +3,15 @@ import pandas as pd
 class poker_t:
     def __init__(self, data,):
         self.data = data 
-        self.df = pd.read_csv('pok.tr.csv')
+        self.df = pd.read_csv('pok.te.csv')
     
     def __neg__(self):
         return self.df.drop_duplicates
     
     def sravn(self):
-        self.df = poker_t('pok.tr.csv')
+        self.df = poker_t('pok.te.csv')
 
         self.df = -self.df
-        
         
         self.df0 = self.df[self.df['Poker Hand'] == 0 ]    
         self.df1 = self.df[self.df['Poker Hand'] == 1 ]
@@ -25,8 +24,6 @@ class poker_t:
         self.df8 = self.df[self.df['Poker Hand'] == 8 ] 
         self.df9 = self.df[self.df['Poker Hand'] == 9 ]
         
-        # print('количество удаленных строк:  ' ,25011 - (len(self.df1) + len(self.df2)+len(self.df3)+len(self.df4)+len(self.df5)+len(self.df6)+len(self.df7)+len(self.df8)+len(self.df9)),)
-        
         self.df0.to_csv('df0.csv')
         self.df1.to_csv('df1.csv')
         self.df2.to_csv('df2.csv')
@@ -38,7 +35,6 @@ class poker_t:
         self.df8.to_csv('df8.csv')
         self.df9.to_csv('df9.csv')
     
-    
     def __del__():
         print('удаление')
         
@@ -48,3 +44,12 @@ def main():
     
 if __name__ == '__main__':
     main()
+    #te:
+    #0- 
+    #1- пара(две карты одинакового анга)
+    #2
+    #3- тройка(три карты одного ранга)
+    #4
+    #5
+    #6
+    #7
