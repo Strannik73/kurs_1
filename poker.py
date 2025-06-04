@@ -12,7 +12,40 @@ class poker_t:
         self.df = poker_t('pok.te.csv')
 
         self.df = -self.df
-        
+        # for row in self.df:
+        #     if row[i] == row [i]:
+        #         for i in self.df:
+                    
+
+
+
+# ========================================================================================
+        # Suit of Card 1
+        # Rank of Card 1
+        # sc1= int(self.df[self.df['Suit of Card 1'] ] )
+        # rc1= self.df[self.df['Rank of Card 1'] ]
+        # sc2= self.df[self.df['Suit of Card 2'] ]
+        # rc2= self.df[self.df['Rank of Card 2'] ]
+        # sc3= self.df[self.df['Suit of Card 3'] ]
+        # rc3= self.df[self.df['Rank of Card 3'] ]
+        # sc4= self.df[self.df['Suit of Card 4'] ]
+        # rc4= self.df[self.df['Rank of Card 4'] ]
+        # sc5= self.df[self.df['Suit of Card 5'] ]
+        # rc5= self.df[self.df['Rank of Card 5'] ]
+        # sc6= self.df[self.df['Suit of Card 6'] ]
+        # rc6= self.df[self.df['Rank of Card 6'] ]
+        # sc7= self.df[self.df['Suit of Card 7'] ]
+        # rc7= self.df[self.df['Rank of Card 7'] ]
+        # sc8= self.df[self.df['Suit of Card 8'] ]
+        # rc8= self.df[self.df['Rank of Card 8'] ]
+        # sc9= self.df[self.df['Suit of Card 9'] ]
+        # rc9= self.df[self.df['Rank of Card 9'] ]
+        # sc10=self.df[self.df['Suit of Card 10'] ]
+        # rc10=self.df[self.df['Rank of Card 10'] ]
+
+
+# ==========================================================================================
+
         self.df0 = self.df[self.df['Poker Hand'] == 0 ]    
         self.df1 = self.df[self.df['Poker Hand'] == 1 ]
         self.df2 = self.df[self.df['Poker Hand'] == 2 ] 
@@ -39,17 +72,18 @@ class poker_t:
         print('удаление')
         
 def main():
-    poker = poker_t('pok.tr.csv')
+    poker = poker_t('pok.te.csv')
     poker.sravn()
     
 if __name__ == '__main__':
     main()
     #te:
     #0- 
-    #1- пара(две карты одинакового анга)
+    #1- пара (две карты одинакового анга)
     #2
-    #3- тройка(три карты одного ранга)
+    #3- тройка (три карты одного ранга)
     #4
     #5
-    #6
+    #6 - Фулл хаус (нужно создать 3 и 2 карты одного достоинства. Пример: два туза и три десятки,)
     #7
+    #8- стрит флеш
