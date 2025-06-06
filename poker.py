@@ -13,27 +13,57 @@ class poker_t_1:
 
         self.df = -self.df
 
-        self.df0 = self.df[self.df['Poker Hand'] == 0 ]    
-        self.df1 = self.df[self.df['Poker Hand'] == 1 ]
-        self.df2 = self.df[self.df['Poker Hand'] == 2 ] 
-        self.df3 = self.df[self.df['Poker Hand'] == 3 ]    
-        self.df4 = self.df[self.df['Poker Hand'] == 4 ] 
-        self.df5 = self.df[self.df['Poker Hand'] == 5 ] 
-        self.df6 = self.df[self.df['Poker Hand'] == 6 ]    
-        self.df7 = self.df[self.df['Poker Hand'] == 7 ] 
-        self.df8 = self.df[self.df['Poker Hand'] == 8 ] 
-        self.df9 = self.df[self.df['Poker Hand'] == 9 ]
+        if self.df['Poker Hand'] == 0:
+            self.df.to_csv('df_test_0.csv')   
+
+        elif self.df['Poker Hand'] == 1:
+            self.df.to_csv('df_test_1.csv')   
+
+        elif self.df['Poker Hand'] == 2:
+            self.df.to_csv('df_test_2.csv')   
+
+        elif self.df['Poker Hand'] == 3:
+            self.df.to_csv('df_test_3.csv')
+
+        elif self.df['Poker Hand'] == 4:
+            self.df.to_csv('df_test_4.csv')   
+
+        elif self.df['Poker Hand'] == 5:
+            self.df.to_csv('df_test_5.csv')   
+
+        elif self.df['Poker Hand'] == 6:
+            self.df.to_csv('df_test_6.csv')   
+
+        elif self.df['Poker Hand'] == 7:
+            self.df.to_csv('df_test_7.csv')   
+
+        elif self.df['Poker Hand'] == 8:
+            self.df.to_csv('df_test_8.csv')   
+
+        elif self.df['Poker Hand'] == 9:
+            self.df.to_csv('df_test_9.csv')  
+
+        # self.df_te0 = self.df[self.df['Poker Hand'] == 0 ]    
+        # self.df_te1 = self.df[self.df['Poker Hand'] == 1 ]
+        # self.df_te2 = self.df[self.df['Poker Hand'] == 2 ] 
+        # self.df_te3 = self.df[self.df['Poker Hand'] == 3 ]    
+        # self.df_te4 = self.df[self.df['Poker Hand'] == 4 ] 
+        # self.df_te5 = self.df[self.df['Poker Hand'] == 5 ] 
+        # self.df_te6 = self.df[self.df['Poker Hand'] == 6 ]    
+        # self.df_te7 = self.df[self.df['Poker Hand'] == 7 ] 
+        # self.df_te8 = self.df[self.df['Poker Hand'] == 8 ] 
+        # self.df_te9 = self.df[self.df['Poker Hand'] == 9 ]
         
-        self.df0.to_csv('df0.csv')
-        self.df1.to_csv('df1.csv')
-        self.df2.to_csv('df2.csv')
-        self.df3.to_csv('df3.csv')
-        self.df4.to_csv('df4.csv')
-        self.df5.to_csv('df5.csv')
-        self.df6.to_csv('df6.csv')
-        self.df7.to_csv('df7.csv')
-        self.df8.to_csv('df8.csv')
-        self.df9.to_csv('df9.csv')
+        # self.df_te0.to_csv('df_test_0.csv')
+        # self.df_te1.to_csv('df_test_1.csv')
+        # self.df_te2.to_csv('df_test_2.csv')
+        # self.df_te3.to_csv('df_test_3.csv')
+        # self.df_te4.to_csv('df_test_4.csv')
+        # self.df_te5.to_csv('df_test_5.csv')
+        # self.df_te6.to_csv('df_test_6.csv')
+        # self.df_te7.to_csv('df_test_7.csv')
+        # self.df_te8.to_csv('df_test_8.csv')
+        # self.df_te9.to_csv('df_test_9.csv')
     
     def __del__():
         print('удаление')
@@ -51,27 +81,56 @@ class poker_t_2(poker_t_1):
 
         self.df = -self.df
 
-        self.df0 = self.df[self.df['Poker Hand'] == 0 ]    
-        self.df1 = self.df[self.df['Poker Hand'] == 1 ]
-        self.df2 = self.df[self.df['Poker Hand'] == 2 ] 
-        self.df3 = self.df[self.df['Poker Hand'] == 3 ]    
-        self.df4 = self.df[self.df['Poker Hand'] == 4 ] 
-        self.df5 = self.df[self.df['Poker Hand'] == 5 ] 
-        self.df6 = self.df[self.df['Poker Hand'] == 6 ]    
-        self.df7 = self.df[self.df['Poker Hand'] == 7 ] 
-        self.df8 = self.df[self.df['Poker Hand'] == 8 ] 
-        self.df9 = self.df[self.df['Poker Hand'] == 9 ]
+        if self.df['Poker Hand'] == 0:
+            self.df.to_csv('df_train_0.csv')   
+
+        elif self.df['Poker Hand'] == 1:
+            self.df.to_csv('df_train_1.csv')   
+
+        elif self.df['Poker Hand'] == 2:
+            self.df.to_csv('df_train_2.csv')   
+
+        elif self.df['Poker Hand'] == 3:
+            self.df.to_csv('df_train_3.csv')
+
+        elif self.df['Poker Hand'] == 4:
+            self.df.to_csv('df_train_4.csv')   
+
+        elif self.df['Poker Hand'] == 5:
+            self.df.to_csv('df_train_5.csv')   
+
+        elif self.df['Poker Hand'] == 6:
+            self.df.to_csv('df_train_6.csv')   
+
+        elif self.df['Poker Hand'] == 7:
+            self.df.to_csv('df_train_7.csv')   
+
+        elif self.df['Poker Hand'] == 8:
+            self.df.to_csv('df_train_8.csv')   
+
+        elif self.df['Poker Hand'] == 9:
+            self.df.to_csv('df_train_9.csv')       
+
+        # self.df_tr1 = self.df[self.df['Poker Hand'] == 1 ]
+        # self.df_tr2 = self.df[self.df['Poker Hand'] == 2 ] 
+        # self.df_tr3 = self.df[self.df['Poker Hand'] == 3 ]    
+        # self.df_tr4 = self.df[self.df['Poker Hand'] == 4 ] 
+        # self.df_tr5 = self.df[self.df['Poker Hand'] == 5 ] 
+        # self.df_tr6 = self.df[self.df['Poker Hand'] == 6 ]    
+        # self.df_tr7 = self.df[self.df['Poker Hand'] == 7 ] 
+        # self.df_tr8 = self.df[self.df['Poker Hand'] == 8 ] 
+        # self.df_tr9 = self.df[self.df['Poker Hand'] == 9 ]
         
-        self.df0.to_csv('df0.csv')
-        self.df1.to_csv('df1.csv')
-        self.df2.to_csv('df2.csv')
-        self.df3.to_csv('df3.csv')
-        self.df4.to_csv('df4.csv')
-        self.df5.to_csv('df5.csv')
-        self.df6.to_csv('df6.csv')
-        self.df7.to_csv('df7.csv')
-        self.df8.to_csv('df8.csv')
-        self.df9.to_csv('df9.csv')
+        # self.df_tr0.to_csv('df_train_0.csv')
+        # self.df_tr1.to_csv('df_train_1.csv')
+        # self.df_tr2.to_csv('df_train_2.csv')
+        # self.df_tr3.to_csv('df_train_3.csv')
+        # self.df_tr4.to_csv('df_train_4.csv')
+        # self.df_tr5.to_csv('df_train_5.csv')
+        # self.df_tr6.to_csv('df_train_6.csv')
+        # self.df_tr7.to_csv('df_train_7.csv')
+        # self.df_tr8.to_csv('df_train_8.csv')
+        # self.df_tr9.to_csv('df_train_9.csv')
 
 
     
