@@ -14,7 +14,7 @@ class poker_t_1:
         self.df = -self.df
 
         i = self.df['Poker Hand'] 
-        for i in range(0, 10):
+        for i in range(10):
             if i == 0:
                 self.df.to_csv('df_test_0.csv') 
             elif i == 1:
