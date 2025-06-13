@@ -9,11 +9,11 @@ class poker_t_1:
         return self.df.drop_duplicates
     
     def sravn_e(self):
-        self.df = poker_t_1('pok.te.csv')
 
-        self.df = -self.df
-
+      
+        
         i = self.df['Poker Hand'] 
+        
         for i in range(10):
             if i == 0:
                 self.df.to_csv('df_test_0.csv') 
@@ -95,7 +95,7 @@ class poker_t_1:
         print('удаление')
 
 class poker_t_2(poker_t_1):
-    def __init__(self, data,):
+    def __init__(self, data):
         self.data = data 
         self.df = pd.read_csv('pok.tr.csv')
     
