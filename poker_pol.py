@@ -2,8 +2,8 @@ import polars as pl
 
 # создаем класс
 class poker_t_1:
-    def __init__ (self, filename):
-        self.df = pl.read_csv(filename)
+    def __init__ (self, filename_1):
+        self.df = pl.read_csv(filename_1)
     
     def __neg__ (self):
         return self.df.unique()
@@ -13,13 +13,13 @@ class poker_t_1:
             df_te = self.df.filter(pl.col('Poker Hand') == i)
             df_te.write_csv(f'df_test_{i}.csv')
             
-        def __del__(self):
-            print('удаление poker_t_1')
+    def __del__(self):
+        print('удаление poker_t_1')
             
 # наследуем класс
 class poker_t_2 (poker_t_1):
-    def __init__ (self, filename):
-        super().__init__(filename)
+    def __init__ (self, filename_2):
+        super().__init__(filename_2)
     
     def sravn_r (self):
         for i in range(10):
